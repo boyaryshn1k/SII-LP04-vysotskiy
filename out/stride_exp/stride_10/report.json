@@ -1,0 +1,32 @@
+{
+  "source": "data/sample_stop_signs.mp4",
+  "class_name": "stop sign",
+  "stride": 10,
+  "frames_total": 1019,
+  "frames_processed": 102,
+  "detections_per_frame_mean": 0.363,
+  "detections_per_frame_max": 2,
+  "unique_tracks": null,
+  "model_version": "yolo11n.pt (ultralytics 8.4.212)",
+  "elapsed_sec": 35.05,
+  "report_version": "v1.0",
+  "detections_total": 37,
+  "frames_with_detections": 32,
+  "frames_skipped": 917,
+  "processed_fps": 2.91,
+  "video_fps": 30.0,
+  "video_duration_sec": 33.97,
+  "conf_threshold": 0.25,
+  "iou_threshold": 0.45,
+  "imgsz": 960,
+  "annotated_video_fps": 30.0,
+  "annotated_frame_repeat": 10,
+  "tracker": "none",
+  "notes": "Трекер не используется, поэтому unique_tracks = null: счётчик считает детекции на каждом обработанном кадре, а не уникальные объекты. Один и тот же знак STOP учитывается многократно, пока остаётся в кадре; пропущенные между обработанными кадрами объекты не учитываются вовсе.",
+  "artifacts": {
+    "annotated_video": null,
+    "frames_dir": null,
+    "frames_saved": 0,
+    "timeline_csv": "out/stride_exp/stride_10/timeline.csv"
+  }
+}

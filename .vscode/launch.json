@@ -1,0 +1,53 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ЛР4: stop sign, stride 5 (основной прогон)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.count_video",
+      "args": [
+        "--source",
+        "data/sample_stop_signs.mp4",
+        "--class",
+        "stop sign",
+        "--stride",
+        "5"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    },
+    {
+      "name": "ЛР4: быстрый тест (первые 150 кадров)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.count_video",
+      "args": [
+        "--source",
+        "data/sample_stop_signs.mp4",
+        "--class",
+        "stop sign",
+        "--stride",
+        "5",
+        "--limit",
+        "150",
+        "--no-save-video",
+        "--out",
+        "out/quick"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    },
+    {
+      "name": "ЛР4: график по кадрам",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "scripts.plot_timeline",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    }
+  ]
+}

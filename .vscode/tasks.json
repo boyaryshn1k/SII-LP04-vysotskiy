@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "0. Установить зависимости в .venv",
+      "type": "shell",
+      "command": "python -m venv .venv; .\\.venv\\Scripts\\python.exe -m pip install --upgrade pip; .\\.venv\\Scripts\\python.exe -m pip install -r requirements.txt",
+      "problemMatcher": []
+    },
+    {
+      "label": "1. Подсчёт: stop sign, stride 5",
+      "type": "shell",
+      "command": ".\\.venv\\Scripts\\python.exe -m src.count_video --source data/sample_stop_signs.mp4 --class 'stop sign' --stride 5",
+      "problemMatcher": []
+    },
+    {
+      "label": "2. Сравнение stride 5 / 10 / 20",
+      "type": "shell",
+      "command": ".\\.venv\\Scripts\\python.exe -m scripts.compare_stride --source data/sample_stop_signs.mp4 --class 'stop sign' --strides 5 10 20",
+      "problemMatcher": []
+    },
+    {
+      "label": "3. График по кадрам",
+      "type": "shell",
+      "command": ".\\.venv\\Scripts\\python.exe -m scripts.plot_timeline",
+      "problemMatcher": []
+    }
+  ]
+}

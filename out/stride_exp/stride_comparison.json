@@ -1,0 +1,50 @@
+[
+  {
+    "stride": 1,
+    "frames_processed": 1019,
+    "frames_skipped": 0,
+    "mean": 0.369,
+    "max": 3,
+    "total": 376,
+    "frames_with_detections": 310,
+    "elapsed_sec": 227.94,
+    "wall_clock_sec": 233.1,
+    "processed_fps": 4.47
+  },
+  {
+    "stride": 5,
+    "frames_processed": 204,
+    "frames_skipped": 815,
+    "mean": 0.348,
+    "max": 2,
+    "total": 71,
+    "frames_with_detections": 62,
+    "elapsed_sec": 55.89,
+    "wall_clock_sec": 60.97,
+    "processed_fps": 3.65
+  },
+  {
+    "stride": 10,
+    "frames_processed": 102,
+    "frames_skipped": 917,
+    "mean": 0.363,
+    "max": 2,
+    "total": 37,
+    "frames_with_detections": 32,
+    "elapsed_sec": 35.05,
+    "wall_clock_sec": 40.09,
+    "processed_fps": 2.91
+  },
+  {
+    "stride": 20,
+    "frames_processed": 51,
+    "frames_skipped": 968,
+    "mean": 0.412,
+    "max": 2,
+    "total": 21,
+    "frames_with_detections": 18,
+    "elapsed_sec": 23.94,
+    "wall_clock_sec": 28.98,
+    "processed_fps": 2.13
+  }
+]
